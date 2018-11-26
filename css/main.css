@@ -22,7 +22,11 @@ h2 {
   font-size: 1.5rem;
 }
 
-figure, body {
+figure {
+  margin: 0;
+}
+
+body {
   margin: 0;
 }
 
@@ -35,6 +39,29 @@ figcaption {
   padding-bottom: 1em;
 }
 
-img {
+.img-flex {
+  display: block;
   width: 100%;
+}
+
+@media only screen and (min-width: 38em) {
+
+  figure {
+    display: flex;
+    position: relative;
+  }
+
+  figcaption {
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 1em;
+    color: #fff;
+    padding: .5em .75em;
+    position: absolute;
+    right: 1em;
+    bottom: 0;
+    width: 50%;
+    margin-bottom: 1em;
+  }
+
+
 }
