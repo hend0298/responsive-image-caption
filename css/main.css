@@ -22,16 +22,13 @@ h2 {
   font-size: 1.5rem;
 }
 
-figure {
-  margin: 0;
-}
-
 body {
   margin: 0;
 }
 
 figure {
   background-color: #e2e2e2;
+  margin: 0;
 }
 
 figcaption {
@@ -46,8 +43,12 @@ figcaption {
 
 @media only screen and (min-width: 38em) {
 
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
   figure {
-    display: flex;
     position: relative;
   }
 
@@ -58,10 +59,23 @@ figcaption {
     padding: .5em .75em;
     position: absolute;
     right: 1em;
-    bottom: 0;
-    width: 50%;
-    margin-bottom: 1em;
+    bottom: 1em;
+    width: 60%;
   }
 
+}
 
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 130%;
+  }
 }
